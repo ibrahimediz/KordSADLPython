@@ -1,7 +1,7 @@
 liste = ["Demhat","EmreS","EmreG","Durmus","Cevaplar","Canberk"]
 import os
 import shutil
-filename = "02_MultiClass"
+filename = "02_MultiLabel"
 for item in liste:
     try:
         os.mkdir(f"/workspace/KordSADLPython/Exercises/{item}")
@@ -11,7 +11,7 @@ for item in liste:
         os.mkdir(f"/workspace/KordSADLPython/Exercises/{item}/data")
     except:
         pass
-    cFile = "darts.csv"
+    cFile = "irrigation_machine.csv"
     source = f"/workspace/KordSADLPython/Documents/data/{cFile}"
     target = f"/workspace/KordSADLPython/Exercises/{item}/data/{cFile}"
     shutil.copy(source,target)
